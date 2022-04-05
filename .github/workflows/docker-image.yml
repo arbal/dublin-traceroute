@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build .ci/docker --file Dockerfile --tag dublin-traceroute:$(date +%s)
+      run: docker build . --file Dockerfile --tag dublin-traceroute:$(date +%s)
