@@ -18,6 +18,7 @@ RUN apt-get update &&                          \
         libgraphviz-dev \
         python3-pygraphviz \
         python3-tabulate \
+        python3-pip \
         && \
     rm -rf /var/lib/apt/lists/*
 
