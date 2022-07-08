@@ -15,7 +15,7 @@ Feedback is very welcome! You can [open a new issue](https://github.com/insomnia
 
 But, in a few words, you can run traceroutes in multi-path networks (i.e. with ECMP load-balancing enabled), recognize NATs, have nice diagrams like the one below, export to JSON, and do this with a command-line tool, a C++ library or a Python library.
 
-![dublin-traceroute example](docs/traceroute_8.8.8.8.png)
+![dublin-traceroute example](https://raw.githubusercontent.com/arbal/dublin-traceroute/master/docs/traceroute_8.8.8.8.png)
 
 
 ### Docker Example
@@ -25,4 +25,4 @@ But, in a few words, you can run traceroutes in multi-path networks (i.e. with E
 #### Dublin Traceroute to wikipedia.org using Docker:
 `docker run arbal/dublin-traceroute:latest bash -c "{ dublin-traceroute wikipedia.org --output-file /dtr.json && python3 -m dublintraceroute plot /dtr.json; } &>/dev/null && cat /dtr.json.png" > wikipedia.org_dublin-traceroute.png`
 
-![dublin-traceroute example using docker](docs/wikipedia.org_dublin-traceroute.png)
+![dublin-traceroute example using docker](https://raw.githubusercontent.com/arbal/dublin-traceroute/master/docs/wikipedia.org_dublin-traceroute.png)
